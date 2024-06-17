@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClicker));
             buttonClick = new Button();
             pictureBoxCount = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCount).BeginInit();
@@ -64,6 +65,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBoxCount);
             Controls.Add(buttonClick);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormClicker";
             Text = "Apple";
             ((System.ComponentModel.ISupportInitialize)pictureBoxCount).EndInit();
