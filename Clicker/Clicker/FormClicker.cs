@@ -31,7 +31,7 @@ public partial class FormClicker : Form
         {
             string text = count.ToString();
 
-            using (Font font = new Font("Arial", 10))
+            using (Font font = new Font("Arial", 18))
             {
                 SizeF textSize = graphics.MeasureString(text, font);
                 float textX = (pictureBox.Width - textSize.Width) / 2; // Центр текста по горизонтали

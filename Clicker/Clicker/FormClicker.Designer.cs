@@ -35,12 +35,18 @@
             // 
             // buttonClick
             // 
+            buttonClick.BackgroundImage = Properties.Resources.apple;
+            buttonClick.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonClick.FlatAppearance.BorderColor = SystemColors.Control;
+            buttonClick.FlatAppearance.BorderSize = 0;
+            buttonClick.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            buttonClick.FlatAppearance.MouseOverBackColor = SystemColors.Control;
+            buttonClick.FlatStyle = FlatStyle.Flat;
             buttonClick.Location = new Point(193, 93);
             buttonClick.Name = "buttonClick";
             buttonClick.Size = new Size(415, 239);
             buttonClick.TabIndex = 0;
-            buttonClick.Text = "button1";
-            buttonClick.UseVisualStyleBackColor = true;
+            buttonClick.UseVisualStyleBackColor = false;
             buttonClick.Click += buttonClick_Click;
             // 
             // pictureBoxCount
@@ -59,7 +65,7 @@
             Controls.Add(pictureBoxCount);
             Controls.Add(buttonClick);
             Name = "FormClicker";
-            Text = "FormClicker";
+            Text = "Apple";
             ((System.ComponentModel.ISupportInitialize)pictureBoxCount).EndInit();
             ResumeLayout(false);
         }
