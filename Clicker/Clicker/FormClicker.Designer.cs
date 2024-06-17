@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormClicker";
+            buttonClick = new Button();
+            pictureBoxCount = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCount).BeginInit();
+            SuspendLayout();
+            // 
+            // buttonClick
+            // 
+            buttonClick.Location = new Point(193, 93);
+            buttonClick.Name = "buttonClick";
+            buttonClick.Size = new Size(415, 239);
+            buttonClick.TabIndex = 0;
+            buttonClick.Text = "button1";
+            buttonClick.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxCount
+            // 
+            pictureBoxCount.Location = new Point(346, 37);
+            pictureBoxCount.Name = "pictureBoxCount";
+            pictureBoxCount.Size = new Size(100, 50);
+            pictureBoxCount.TabIndex = 1;
+            pictureBoxCount.TabStop = false;
+            // 
+            // FormClicker
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(pictureBoxCount);
+            Controls.Add(buttonClick);
+            Name = "FormClicker";
+            Text = "FormClicker";
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCount).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonClick;
+        private PictureBox pictureBoxCount;
     }
 }
