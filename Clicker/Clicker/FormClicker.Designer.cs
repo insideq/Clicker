@@ -41,6 +41,7 @@
             buttonClick.TabIndex = 0;
             buttonClick.Text = "button1";
             buttonClick.UseVisualStyleBackColor = true;
+            buttonClick.Click += buttonClick_Click;
             // 
             // pictureBoxCount
             // 
