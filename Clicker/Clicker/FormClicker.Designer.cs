@@ -62,11 +62,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(784, 461);
             Controls.Add(pictureBoxCount);
             Controls.Add(buttonClick);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximumSize = new Size(800, 500);
+            MinimumSize = new Size(800, 500);
             Name = "FormClicker";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Apple";
             ((System.ComponentModel.ISupportInitialize)pictureBoxCount).EndInit();
             ResumeLayout(false);

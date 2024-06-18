@@ -42,6 +42,9 @@ public partial class FormClicker : Form
 
         // Новое изображение в PictureBox
         pictureBox.Image = bitmap;
+
+        if (count > 50) buttonClick.BackgroundImage = Properties.Resources.appleYellow;
+        if (count > 100) buttonClick.BackgroundImage = Properties.Resources.appleRed;
     }
 
     private void buttonClick_Click(object sender, EventArgs e)
